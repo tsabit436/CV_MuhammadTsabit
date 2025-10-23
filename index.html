@@ -1,96 +1,98 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV Saya - Bootstrap</title>
+  <meta charset="UTF-8"> <!-- Menentukan encoding karakter agar huruf tampil dengan benar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Agar tampilan responsif di semua perangkat -->
+  <title>CV Muhammad Tsabit - Bootstrap</title> <!-- Judul halaman pada tab browser -->
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap css CDN (alternatif jika file lokal gagal dimuat) -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">CV Saya</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Membuat navbar dengan tema gelap -->
+    <div class="container"> <!-- Agar konten navbar berada di tengah -->
+      <a class="navbar-brand" href="#">CV Muhammad Tsabit</a> <!-- Judul atau nama brand di navbar -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"> <!-- Tombol toggle untuk tampilan mobile -->
+        <span class="navbar-toggler-icon"></span> <!-- Ikon garis tiga (hamburger menu) -->
       </button>
 
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
-          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
-          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
-        </ul>
+      <div class="collapse navbar-collapse" id="menu"> <!-- Menu yang bisa ditampilkan atau disembunyikan -->
+        <ul class="navbar-nav ms-auto"> <!-- Menyusun item menu ke sisi kanan -->
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li> <!-- Menu Beranda -->
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li> <!-- Menu ke bagian Tentang -->
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li> <!-- Menu ke bagian Keahlian -->
       </div>
     </div>
   </nav>
 
-  <!-- BANNER -->
-  <div class="bg-primary text-white text-center p-5">
-    <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Foto Profil">
-    <h1 class="fw-bold">Muhammad Tsabit</h1>
-    <p>Mahasiswa | Web Developer | UI/UX Enthusiast</p>
+  <!-- ============ BANNER ============ -->
+  <div class="bg-primary text-white text-center p-5"> <!-- Bagian banner dengan latar biru dan teks putih -->
+    <img src="TSABIT.png" class="rounded-circle mb-3" alt="Foto Profil"> <!-- Foto profil berbentuk lingkaran -->
+    <h1 class="fw-bold">Muhammad Tsabit</h1> <!-- Nama besar dengan teks tebal -->
+    <p>Mahasiswa | Data Analyst | UI/UX Enthusiast</p> <!-- Deskripsi singkat profesi -->
   </div>
 
-  <!-- TENTANG SAYA -->
-  <div class="container my-5" id="tentang">
-    <h2 class="text-center mb-4">Tentang Saya</h2>
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="https://via.placeholder.com/200" class="img-fluid rounded" alt="Foto Diri">
+  <!-- ============ TENTANG SAYA ============ -->
+  <div class="container my-5" id="tentang"> <!-- Bagian Tentang Saya, diberi jarak vertikal (my-5) -->
+    <h2 class="text-center mb-4">Tentang Saya</h2> <!-- Judul bagian tengah -->
+    <div class="row"> <!-- Baris untuk grid Bootstrap -->
+      <div class="col-md-4 text-center"> <!-- Kolom kiri berisi foto -->
+        <img src="Tsabit.jpeg" class="img-fluid rounded" alt="Foto Diri"> <!-- Foto responsif dengan sudut membulat -->
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8"> <!-- Kolom kanan berisi teks -->
         <p>
-          Halo, saya <b>Muhammad Tsabit</b>. Saya seorang mahasiswa yang tertarik pada pengembangan web,
-          terutama dalam bidang frontend dan desain antarmuka pengguna. Saya senang mempelajari hal baru
-          dan menerapkannya pada proyek nyata.
+          Saya merupakan seorang mahasiswa yang memiliki minat dalam pengembangan web, pengelolaan database,
+          serta desain UI/UX. Saya senang mempelajari hal-hal baru untuk terus mengembangkan keterampilan diri.
         </p>
+        <!-- Informasi kontak pribadi -->
         <ul>
-          <li><b>Email:</b> tsabit@example.com</li>
-          <li><b>Alamat:</b> Bandung, Indonesia</li>
-          <li><b>No HP:</b> 0812-xxxx-xxxx</li>
+          <li><b>Email:</b> tsabit436@gmail.com</li>
+          <li><b>Alamat:</b> Jakarta, Indonesia</li>
+          <li><b>No HP:</b> 081319471928</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- KEAHLIAN -->
-  <div class="container my-5" id="keahlian">
-    <h2 class="text-center mb-4">Keahlian</h2>
-    <div class="row text-center">
+  <!-- ============ KEAHLIAN ============ -->
+  <div class="container my-5" id="keahlian"> <!-- Bagian keahlian dengan jarak vertikal -->
+    <h2 class="text-center mb-4">Keahlian</h2> <!-- Judul bagian -->
+    <div class="row text-center"> <!-- Baris dengan teks rata tengah -->
+      <!-- Kartu keahlian Frontend -->
       <div class="col-md-4 mb-3">
-        <div class="card p-3">
+        <div class="card p-3"> <!-- Card Bootstrap dengan padding -->
           <h5>Frontend</h5>
           <p>HTML, CSS, JavaScript, Bootstrap</p>
         </div>
       </div>
+
+      <!-- Kartu keahlian Backend -->
       <div class="col-md-4 mb-3">
         <div class="card p-3">
           <h5>Backend</h5>
           <p>Python, PHP, MySQL</p>
         </div>
       </div>
+
+      <!-- Kartu keahlian Desain -->
       <div class="col-md-4 mb-3">
         <div class="card p-3">
           <h5>Desain</h5>
-          <p>Figma, Canva, Photoshop</p>
+          <p>Canva</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center p-3">
-    <p>&copy; 2025 Muhammad Tsabit. Semua Hak Dilindungi.</p>
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-dark text-white text-center p-3"> <!-- Footer dengan warna gelap -->
+    <p>&copy; 2025 Muhammad Tsabit. Semua Hak Dilindungi.</p> <!-- Hak cipta -->
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- Bootstrap JS CDN (alternatif jika file lokal gagal dimuat) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
